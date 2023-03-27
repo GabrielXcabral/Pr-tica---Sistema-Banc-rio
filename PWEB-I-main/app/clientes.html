@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastrar Cliente</h1>
+    nome: <input id="nomecliente"> <br><br>
+    cpf: <input id="cpfcliente"> <br><br>
+    <!--conta: <input id="conta"> <br><br>-->
+    <button onclick="cliente.criarCliente()">Inserir</button>
+    <br>
+    <br>
+
+    <h3>Clientes cadastrados:</h3>
+    <ul id="listaclientes"></ul>
+
+    <br>
+    <br>
+    <h1>Consultar Clientes</h1>
+    Buscar Cliente - (Digite o cpf):<input id="buscarcliente">
+    <button onclick="cliente.pesquisa()">Pesquisar</button>
+
+    <ul id="resultadodabusca"></ul>
+
+
+
+    <script src="js/model/conta.js"></script>
+    <script src="js/model/cliente.js"></script>
+    <script src="js/model/clienteespecial.js"></script>
+    <script src="js/model/clientes.js"></script>
+    <script src="js/controller/cliente-Controller.js"></script>
+    <script src="js/appcliente.js"></script>
+</body>
+</html>
